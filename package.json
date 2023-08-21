@@ -2,15 +2,16 @@
   "name": "@faustwp/faust-scaffold",
   "private": true,
   "scripts": {
+    "predev": "faust generatePossibleTypes && faust generateGlobalStylesheet",
+    "prebuild": "faust generatePossibleTypes && faust generateGlobalStylesheet",
     "dev": "faust dev",
     "build": "faust build",
-    "generate": "faust generatePossibleTypes",
     "start": "faust start"
   },
   "dependencies": {
     "@apollo/client": "^3.7.7",
     "@faustwp/cli": "^1.0.1",
-    "@faustwp/core": "^1.0.3",
+    "@faustwp/core": "^1.1.0",
     "graphql": "^16.6.0",
     "next": "^13.1.6",
     "react": "^18.2.0",
